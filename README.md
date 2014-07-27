@@ -1,7 +1,9 @@
 Exercícios de programação (EP's)
 ===
 
-Repositório para compartilhamento de EPs (Exercícios de Programação). Todos são convidados a incluir novos exercícios seguindo as normas descritas adiante.
+Repositório para compartilhamento de EPs (Exercícios de Programação).
+
+**Todos são convidados a incluir novos exercícios.**
 
 Normas
 -----
@@ -14,4 +16,4 @@ O uso do repositório deve seguir as seguintes normas:
 
 2. Dentro do diretório do exercício deve conter um arquivo **README.md** com a especificação do exercício.
 
-3. Cada usuário que desenvolver o exercício deverá utilizar um **arquivo** ou **diretório** (a dependendo da complexidade do exercício) contendo o seu nome.
+3. Cada usuário que desenvolver o exercício deverá utilizar um **arquivo** ou **diretório** (a depender da complexidade do exercício) com o seu nome de usuário dentro do diretório do **ep**.
