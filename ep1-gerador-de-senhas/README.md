@@ -3,6 +3,11 @@ EP 1 - Gerador de senhas
 
 Programa para gerar senhas aleatórias via linha de comando de forma simples.
 
+Instruções
+--------
+
+Crie um arquivo com seu nome na raiz do projeto com a primeira versão do script.
+
 Especificação
 ----------
 
@@ -30,12 +35,6 @@ Exemplo
     b@qc6rUj
     cH8thasw
     bru5acAQ
-
-Instruções
---------
-
-Crie um arquivo com seu nome na raiz do projeto com a primeira versão do script.
-
 
 Links úteis
 ---------
