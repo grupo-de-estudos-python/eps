@@ -1,4 +1,4 @@
-Exercício 01 - Número aleatórios [random]
+EP 2 - Número aleatórios [random]
 ===
 
 Importa módulo random e sorteia um número inteiro entre 1 e 100
