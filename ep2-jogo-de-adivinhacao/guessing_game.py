@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-#programa1.py - Primeiro programa
+#guession_game.py - Jogo de adivinhação
 
 """
 Importa módulo random e sorteia
