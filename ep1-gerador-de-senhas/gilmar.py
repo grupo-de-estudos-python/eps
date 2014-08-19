@@ -51,6 +51,11 @@ answer = """
 | {2} |
 | {3} |
 | {4} |
+| {5} |
+| {6} |
+| {7} |
+| {8} |
+| {9} |
 | ----------------------------------- |
 |_______________________ooo___________|
                 |  |  |
@@ -87,7 +92,7 @@ def generate_password(length, extra_chars=''):
     return pwd
 
 area = size if size > 35 else 35
-pwd = [generate_password(size, special_chars).center(area) for x in range(5)]
+pwd = [generate_password(size, special_chars).center(area) for x in range(10)]
 
 if area > 35:
     hr = "-" * size
