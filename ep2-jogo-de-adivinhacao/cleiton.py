@@ -1,4 +1,5 @@
 #!usr/bin/env python
+# -*- encoding: utf-8 -*-
 
 import random
 random.seed() # inicializa o contador
