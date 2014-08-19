@@ -18,5 +18,8 @@ while True:
             print "Sorteado numero MAIOR, tente novamente"
         elif s < n:
             print "Sorteado numero MENOR, tente novamente"
-    except ValueError:
+    except ValueError, e:
         print "Favor digitar um numero inteiro valido de 1 a 100."
+    except KeyboardInterrupt, e:
+        print "Teste interrompido!"
+        break
