@@ -44,9 +44,13 @@ answer = """
                ( \___/ )
  __________ooo__\_____/_______________
 |                                     |
-| Senha gerada com sucesso! Tome nota:|
+| Senha gerada com sucesso! Escolha:  |
 | ----------------------------------- |
 | {0} |
+| {1} |
+| {2} |
+| {3} |
+| {4} |
 | ----------------------------------- |
 |_______________________ooo___________|
                 |  |  |
@@ -82,15 +86,16 @@ def generate_password(length, extra_chars=''):
 
     return pwd
 
-pwd = generate_password(size, str(special_chars))
+area = size if size > 35 else 35
+pwd = [generate_password(size, special_chars).center(area) for x in range(5)]
 
-if size > 35:
+if area > 35:
     hr = "-" * size
     print ""
-    print "Senha gerada com sucesso:".center(size)
+    print "Senha gerada com sucesso:".center(area)
     print hr
-    print pwd
+    print "\n".join(pwd)
     print hr
     print pythonman
 else:
-    print answer.format(pwd.center(35))
+    print answer.format(*pwd)
