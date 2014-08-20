@@ -10,6 +10,8 @@ Exemplo:
 
 *Note que o alfabeto para substituição simplesmente teve as letras deslocadas para a direita.*
 
+Usando o alfabeto e chave anteriores:
+
 	Texto para codificar: GRUPO DE ESTUDOS PYTHON
 	Resultado             ALOJI XY YMNOXIM JSNBIH
 
@@ -50,16 +52,13 @@ Para decodificar:
 Links úteis
 -------
 
-https://docs.python.org/2/library/sys.html#sys.argv
-
-https://docs.python.org/2/library/string.html
-
-http://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar
-
-https://pt.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher
+- https://docs.python.org/2/library/sys.html#sys.argv
+- https://docs.python.org/2/library/string.html
+- http://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar
+- https://pt.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher
 
 
 Referências
 ------
 
-https://pt.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher
+- https://pt.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher
