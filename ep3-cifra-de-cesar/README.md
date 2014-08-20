@@ -10,8 +10,8 @@ Exemplo:
 
 *Note que o alfabeto para substituição simplesmente teve as letras deslocadas para a direita.*
 
-Texto para codificar: GRUPO DE ESTUDOS PYTHON
-Resultado             ALOJI XY YMNOXIM JSNBIH
+	Texto para codificar: GRUPO DE ESTUDOS PYTHON
+	Resultado             ALOJI XY YMNOXIM JSNBIH
 
 No exemplo acima, para a letra "G" por exemplo, buscamos a letra correspondente no alfabeto para troca, no caso "A".
 
@@ -51,8 +51,11 @@ Links úteis
 -------
 
 https://docs.python.org/2/library/sys.html#sys.argv
+
 https://docs.python.org/2/library/string.html
+
 http://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar
+
 https://pt.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher
 
 
