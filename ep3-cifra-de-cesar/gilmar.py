@@ -6,7 +6,7 @@
 """
 Importa módulo string e argparse para criptografar e descriptografar texto
 Referências:
-    - https://docs.python.org/3/library/string.html
+    - https://docs.python.org/2/library/string.html
     - https://docs.python.org/2/library/argparse.html
 """
 
@@ -38,7 +38,7 @@ if not args.encrypt and not args.decrypt:
     parser.exit()
 
 try:
-    complement = "desc" if args.decrypt else ""
+    complement = "des" if args.decrypt else ""
     message = "Entre com o texto para {0}criptografia: ".format(complement)
     text = str(raw_input(message))
 
