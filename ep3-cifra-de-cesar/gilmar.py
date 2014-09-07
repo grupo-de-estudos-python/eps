@@ -10,8 +10,11 @@ Referências:
     - https://docs.python.org/2/library/argparse.html
 """
 
+# Limita o que será importado ao usar "from gilmar import *" em outro arquivo
+# ou no modo iterativo (digitando "python" neste diretório no terminal)
+__all__ = ("encrypt", "decrypt",)
+
 import string
-import argparse
 
 pythonman = """
   _ __  _  _ | |_ | |_   ___  _ _   _ __   __ _  _ _
@@ -20,35 +23,25 @@ pythonman = """
  |_|    |__/
 """
 
-parser = argparse.ArgumentParser(description="Cifra de Cesar")
 
-parser.add_argument("-c", "--encrypt",
-                    help="Criptografa o texto informado.",
-                    action="store_true")
+def encrypt(text):
+    """
+        Criptografa a string informada no param.
+        Exempo de uso:
+            print encrypt("teste")
+            nymny
+    """
+    return __passwd_make(text)
 
-parser.add_argument("-d", "--decrypt",
-                    help="Descriptografa o texto informado.",
-                    action="store_true")
 
-args = parser.parse_args()
-
-if not args.encrypt and not args.decrypt:
-    print pythonman
-    parser.print_help()
-    parser.exit()
-
-try:
-    complement = "des" if args.decrypt else ""
-    message = "Entre com o texto para {0}criptografia: ".format(complement)
-    text = str(raw_input(message))
-
-except KeyboardInterrupt, e:
-    print "\nObrigado por usar nossos scripts."
-    parser.exit()
-
-except ValueError, e:
-    parser.print_help()
-    parser.exit()
+def decrypt(text):
+    """
+    Descriptografa a string informada no param.
+    Exempo de uso:
+        print decrypt("nymny")
+        teste
+    """
+    return __passwd_make(text, False)
 
 
 def __passwd_make(text, encrypt=True):
@@ -71,17 +64,43 @@ def __passwd_make(text, encrypt=True):
     return pwd
 
 
-def encrypt(text):
-    return __passwd_make(text)
+if __name__ == "__main__":
+    import argparse
 
+    parser = argparse.ArgumentParser(description="Cifra de Cesar")
 
-def decrypt(text):
-    return __passwd_make(text, False)
+    parser.add_argument("-c", "--encrypt",
+                        help="Criptografa o texto informado.",
+                        action="store_true")
 
-if args.encrypt:
-    passwd = encrypt(text).center(54)
-else:
-    passwd = decrypt(text).center(54)
+    parser.add_argument("-d", "--decrypt",
+                        help="Descriptografa o texto informado.",
+                        action="store_true")
 
-print pythonman, passwd
-print
+    args = parser.parse_args()
+
+    if not args.encrypt and not args.decrypt:
+        print pythonman
+        parser.print_help()
+        parser.exit()
+
+    try:
+        complement = "des" if args.decrypt else ""
+        message = "Entre com o texto para {0}criptografia: ".format(complement)
+        text = str(raw_input(message))
+
+    except KeyboardInterrupt, e:
+        print "\nObrigado por usar nossos scripts."
+        parser.exit()
+
+    except ValueError, e:
+        parser.print_help()
+        parser.exit()
+
+    if args.encrypt:
+        passwd = encrypt(text).center(54)
+    else:
+        passwd = decrypt(text).center(54)
+
+    print pythonman, passwd
+    print
