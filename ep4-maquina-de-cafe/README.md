@@ -39,18 +39,20 @@ Ao rodar o programa, deve-se apresentar opções para a escolha da ação deseja
 
 #### Bebidas que devem estar disponíveis
 
-1. Café espresso curto. R$ 0,00
-2. Café espresso longo. R$ 0,00
-3. Café com leite.  **R$ 0,60**
-4. Cappuccino. **R$ 0,60**
-5. Mocaccino. **R$ 0,60**
-6. Chocolate. **R$ 0,60**
-7. Chocoleite. **R$ 0,60**
-8. Leite. **R$ 0,60**
-9. Chá. R$ 0,00
-10. Água quente. **R$ 0,25**
+Nome                | Valor
+------------------- | ------------
+Café espresso curto | R$ 0,00
+Café espresso longo | R$ 0,00
+Café com leite      | **R$ 0,60**
+Cappuccino          | **R$ 0,60**
+Mocaccino           | **R$ 0,60**
+Chocolate           | **R$ 0,60**
+Chocoleite          | **R$ 0,60**
+Leite               | **R$ 0,60**
+Chá                 | R$ 0,00
+Água quente         | **R$ 0,25**
 
-*Nota: a palavra **Espresso** (com "s") é devido à origem italiana deste tipo de café (e dá maquina usada como referência para este documento) e que aqui [no Brasil] é traduzido como **Expresso** (com "x"). [Referềncia](http://veja.abril.com.br/blog/sobre-palavras/consultorio/o-cafe-e-expresso-ou-espresso/)*
+_Nota: a palavra **Espresso** (com "s") é devido à origem italiana deste tipo de café (e dá maquina usada como referência para este documento) e que aqui [no Brasil] é traduzido como **Expresso** (com "x"). [Referência](http://veja.abril.com.br/blog/sobre-palavras/consultorio/o-cafe-e-expresso-ou-espresso/)_
 
 #### Outras restrições
 
@@ -77,10 +79,10 @@ Classe **abstrata** (vide seção **Links úteis**) representando a entidade **B
 
 ##### Atributos
 
-- Nome: nome da bebida. Ex: *Cappuccino*.
-- Valor: valor da bebida. Ex: 0.60
+- **Nome**: nome da bebida. Ex: *Cappuccino*.
+- **Valor**: valor da bebida. Ex: 0.60
 
-*Recomendação: veja sobre **abstractproperty** no link da seção **Links úteis** sobre classes abstratas para implementação dos atributos abstratos da classe.*
+_Recomendação: veja sobre **abstractproperty** no link da seção **Links úteis** sobre classes abstratas para implementação dos atributos abstratos da classe._
 
 #### Subclasses de Bebida
 
