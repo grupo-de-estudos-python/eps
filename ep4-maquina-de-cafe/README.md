@@ -96,11 +96,11 @@ Ex.: Valor de R$ 0.60, o usuário inseriu R$ 1.00, o troco poderá ser 1 moeda d
 
 ##### Atributos
 
-- **Valores disponíveis**: Lista Cédulas/Moedas disponíveis (apenas os valores, sem gerenciamento de quantidades).
+- **Valores disponíveis**: Lista com as Cédulas/Moedas disponíveis (apenas os valores, sem gerenciamento de quantidades).
 
 ##### Métodos
 
-- **Calcula troco**: Recebe o valor total e o informado pelo usuário e retorna um dicionário com as cédulas e suas quantidades calculadas para troco.
+- **Calcula troco**: Recebe o **valor total** e o **informado pelo usuário** e retorna um **dicionário com as cédulas** e suas quantidades calculadas para troco.
 
 #### Máquina de café
 
