@@ -1,7 +1,7 @@
 Calculadora de Troco
 =========
 
-Implementar um programa onde dada uma quantia inicial e o valor recebido seja retornada a quantidade de troco correspondente à diferença do valor respeitando as cédulas e moedas do **REAL**.
+Implementar um programa onde dada uma quantia inicial e o valor recebido seja retornada a quantidade de troco correspondente à diferença do valor respeitando as cédulas e moedas do **REAL**. Retornar sempre a maior quantidade da cédula de maior valor para atender ao troco.
 
 O que verei neste EP?
 -----------
@@ -31,16 +31,19 @@ O programa deve permitir:
 
 - Ao rodar o programa, deve-se perguntar ao usuário o valor inicial, o valor recebido e em seguida mostrar o resultado, ex.:
 
-    > > > Entre com o valor inicial:
-    55.60
-    > > > Entre com o valor recebido:
-    60.00
+```
+>>> Entre com o valor inicial:
+55.60
+>>> Entre com o valor recebido:
+60.00
 
-    Resultado:
-    2 cédulas de 2 reais.
-    1 moeda de 25 centavos.
-    1 moeda de 10 centavos.
-    1 moeda de 5 centavos.
+Resultado:
+2 cédulas de 2 reais.
+1 moeda de 25 centavos.
+1 moeda de 10 centavos.
+1 moeda de 5 centavos
+```
+
 
 #### Cédulas e moedas que devem ser utilizadas.
 
@@ -51,7 +54,7 @@ Utilizar as cédulas e moedas presentes no **REAL**.
 
 #### Outras restrições
 
-- Acusar erro caso o **valor recebido** seja superior ao **valor inicial**.
+- Acusar erro caso o **valor recebido** seja inferior ao **valor inicial**.
 
 Implementação
 -----------
