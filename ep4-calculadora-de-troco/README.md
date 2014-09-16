@@ -31,9 +31,9 @@ O programa deve permitir:
 
 - Ao rodar o programa, deve-se perguntar ao usuário o valor inicial, o valor recebido e em seguida mostrar o resultado, ex.:
 
-    >>> Entre com o valor inicial:
+    > > > Entre com o valor inicial:
     55.60
-    >>> Entre com o valor recebido:
+    > > > Entre com o valor recebido:
     60.00
 
     Resultado:
@@ -42,7 +42,7 @@ O programa deve permitir:
     1 moeda de 10 centavos.
     1 moeda de 5 centavos.
 
-#### Cédulas/Moedas que devem ser utilizadas.
+#### Cédulas e moedas que devem ser utilizadas.
 
 Utilizar as cédulas e moedas presentes no **REAL**.
 
